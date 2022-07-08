@@ -264,6 +264,14 @@ header {
 
         .cascade-slider_item.now {
             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.4));
+
+            &:hover {
+                cursor: pointer;
+
+                .production-images .overlay {
+                    opacity: 1;
+                }
+            }
         }
 
         .cascade-slider_arrow {
@@ -283,10 +291,37 @@ header {
     .production-images {
         min-height: 270px;
         min-width: 170px;
+        position: relative;
 
         >img {
             max-width: 100%;
             border-radius: 10px;
+            position: relative;
+        }
+
+        .overlay {
+            // display: none;
+            opacity: 0;
+            transition: 0.3s;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(185, 184, 184, 0.432) 0%, rgba(0, 0, 0, 0.83) 100%);
+
+            >h3 {
+                color: $white;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 600;
+
+            }
         }
     }
 }
