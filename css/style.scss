@@ -96,7 +96,7 @@ p {
     }
 }
 
-// TRIPLE SPINNER 
+// TRIPLE PRELOAD SPINNER 
 .triple-spinner {
     display: block;
     position: relative;
@@ -146,6 +146,39 @@ p {
         transform: rotate(360deg);
     }
 }
+
+// social media icon styles
+#linkedin {
+    &:hover {
+        filter: invert(23%) sepia(96%) saturate(3393%) hue-rotate(184deg) brightness(95%) contrast(102%);
+    }
+}
+
+#facebook {
+    &:hover {
+        filter: invert(34%) sepia(7%) saturate(4601%) hue-rotate(183deg) brightness(94%) contrast(91%);
+    }
+}
+
+#twitter {
+    &:hover {
+        filter: invert(65%) sepia(91%) saturate(3563%) hue-rotate(165deg) brightness(92%) contrast(109%);
+    }
+}
+
+#instagram {
+    &:hover {
+        filter: invert(56%) sepia(37%) saturate(6089%) hue-rotate(335deg) brightness(101%) contrast(100%);
+    }
+}
+
+#youtube {
+    &:hover {
+        filter: invert(12%) sepia(86%) saturate(7347%) hue-rotate(7deg) brightness(103%) contrast(128%);
+    }
+}
+
+// -------------Website styling starts-----------------
 
 header {
     position: fixed;
